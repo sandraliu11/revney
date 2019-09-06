@@ -102,10 +102,10 @@
 		<!--
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/viewform?embedded=true" width="640" height="489" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		-->
-		<form class="row align-items-center justify-content-center no-gutters mt-70" data-aos-duration="700" data-aos="fade-down" data-aos-delay="700" method="POST" id="interest-form" action="https://forms.gle/ad2BkP4TkVJUE6zn9" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
-			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-flex flex-wrap justify-content-center justify-content-md-between holder"  id="subscription">
-				<input type="email" name="email" placeholder="Your email" class="mw-320 input lg border-transparent-white focus-white color-white placeholder-transparent-white f-20" required />
-				<input type="submit" class="btn action-1 lg" value="Notify me!">
+		<form class="row align-items-center justify-content-center no-gutters mt-70" data-aos-duration="700" data-aos="fade-down" data-aos-delay="700" method="POST" id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
+			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-flex flex-wrap justify-content-center justify-content-md-between holder"  id="email-input">
+				<input type="email" name="email" id="email" placeholder="Your email" class="mw-320 input lg border-transparent-white focus-white color-white placeholder-transparent-white f-20" required />
+				<input type="submit" id="email-submit" class="btn action-1 lg" value="Notify me!">
 			</div>
 		</form>
 
@@ -133,10 +133,12 @@
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	Please, fill in required fields.
 </div>
+<!--
 <div class="alert alert-danger alert-dismissible alert-form-error" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	An error occurred while sending data :(
 </div>
+-->
 <!-- popup with video -->
 <div class="overlay"></div>
 
