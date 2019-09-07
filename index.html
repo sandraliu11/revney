@@ -97,13 +97,15 @@
                 // $("#thank-you").show();
                 var x = document.getElementById("thank-you");
                 x.style.display = "block";
+                var button = document.getElementById('email-form')
+    			button.style.display = "none"
             }
         </script>
 <!--		<script type="text/javascript">var submitted=false;</script>-->
 <!--    	<iframe id="hidden_iframe" name="hidden_iframe" onload="submitted&amp;&amp;(window.location=&quot;https://blog.webjeda.com/demo/google-form-customize/&quot;)" style="display:none"></iframe>-->
 <!--        <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>-->
 <div class="interest-form">
-        <form class="row align-items-center justify-content-center no-gutters mt-70" method="POST" target="hidden_iframe" onsubmit="postSubmitAction(); return true;" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/formResponse" target="hidden_iframe" >
+        <form class="row align-items-center justify-content-center no-gutters mt-70" method="POST" target="hidden_iframe" onsubmit="postSubmitAction(); return true;" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/formResponse" target="hidden_iframe" id = "email-form">
 			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-flex flex-wrap justify-content-center justify-content-md-between holder" id="mG61Hd">
 				<input type="email" name="entry.1865802311" id="email" placeholder="Your email" class="mw-320 input lg border-transparent-white focus-white color-white placeholder-transparent-white f-20" required />
 				<input type="submit" id="email-submit" class="btn action-1 lg" value="Notify me!">
