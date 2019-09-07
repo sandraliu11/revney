@@ -4,7 +4,7 @@
 		<meta charset="utf-8" >
 		<title>Revney</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-				<link rel="icon" href="i/favicon.png" type="image/x-icon">
+				<link rel="icon" href="i/revclear.png" type="image/x-icon">
 		<!-- Google Fonts -->
 				<link href="https://fonts.googleapis.com/css?family=Arimo:100,200,300,400,600,500,700,800,900|Arimo:100,200,300,400,500,600,700,800,900&amp;subset=hebrew" rel="stylesheet">
 				<!-- Bootstrap 4.3.1 CSS -->
@@ -65,7 +65,7 @@
 		<div class="container px-xl-0">
 			<div class="row justify-content-between align-items-baseline">
 				<div class="col-md-4" data-aos-duration="700" data-aos="fade-down" data-aos-delay="250">
-					<div class="logo color-white">Revney</div>
+					<!--<div class="logo color-white">Revney</div>-->
 				</div>
 				<div class="col-md-6 d-flex justify-content-end align-items-center" data-aos-duration="700" data-aos="fade-down" data-aos-delay="250">
 					<!--
@@ -81,30 +81,43 @@
 	<div class="container">
 		<!-- <div class="mb-3 logo color-white d-block d-xl-none text-center logo_mobile">Revney</div> -->
 		<h1 class="big color-white text-center" data-aos-duration="700" data-aos="fade-down" data-aos-delay="0">Revney</h1>
-		<h3 class="big color-white text-center" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">Revolutionize your journey</h3>
+		<h4 class="big color-white text-center" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">A new way to plan travel</h4>
 		<div class="mw-620 mx-auto mt-35 f-22 color-white op-7 text-center text-adaptive">
 			<span data-aos-duration="700" data-aos="fade-down" data-aos-delay="350">
-			We will be releasing the initial MVP testing, you'll be the first to find out!
-              <strong>September 14th, 2019</strong><br>
+			Sign up for the beta test of our app
+              <strong>October 2019</strong>
 			</span>
 		</div>
 
-		
-		<script type="text/javascript">var submitted=false;</script>
-    	<iframe id="hidden_iframe" name="hidden_iframe" onload="submitted&amp;&amp;(window.location=&quot;https://blog.webjeda.com/demo/google-form-customize/&quot;)" style="display:none"></iframe>
-    	
-		<form class="row align-items-center justify-content-center no-gutters mt-70" method="POST" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc-8dCVJvGrqittSvD169haLx-FjDe-yvkczAnk473-GvSx1A/formResponse"
-		target="hidden_iframe" onsubmit="submitted=true;">
+
+        <script>
+            function postSubmitAction() {
+                // window.location='thank_you.html';
+                $("#email-input").remove();
+                // $("#thank-you").show();
+                var x = document.getElementById("thank-you");
+                x.style.display = "block";
+            }
+        </script>
+<!--		<script type="text/javascript">var submitted=false;</script>-->a
+<!--    	<iframe id="hidden_iframe" name="hidden_iframe" onload="submitted&amp;&amp;(window.location=&quot;https://blog.webjeda.com/demo/google-form-customize/&quot;)" style="display:none"></iframe>-->
+<!--        <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>-->
+
+        <form id="interest-form" class="row align-items-center justify-content-center no-gutters mt-70" method="POST" target="hidden_iframe" onsubmit="postSubmitAction(); return true;" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 			<div class="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-flex flex-wrap justify-content-center justify-content-md-between holder"  id="email-input">
-				<input type="email" name="entry.1811167218" id="email" placeholder="Your email" class="mw-320 input lg border-transparent-white focus-white color-white placeholder-transparent-white f-20" required />
+				<input type="email" name="entry.97927929" id="email" placeholder="Your email" class="mw-320 input lg border-transparent-white focus-white color-white placeholder-transparent-white f-20" required />
 				<input type="submit" id="email-submit" class="btn action-1 lg" value="Notify me!">
 			</div>
 		</form>
 
-		<div id="thank-you" hidden>
-			<h2 class="section-heading">Thank You for Signing Up!</h2>
-			<p>You will be notified when our app is available.</p>
-		</div>
+        <div class="container" id="thank-you" style="display:none">
+            <!-- <div class="mb-3 logo color-white d-block d-xl-none text-center logo_mobile">Revney</div> -->
+            <h3 class="big color-white text-center" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">Thank You for Signing Up!</h3>
+            <div class="mw-620 mx-auto mt-35 f-22 color-white op-7 text-center text-adaptive">
+			<span data-aos-duration="700" data-aos="fade-down" data-aos-delay="350">
+			You will be notified when our app is available!
+			</span>
+            </div>
 
 		<div class="color-white op-3 text-center mt-35">
 			<!--
