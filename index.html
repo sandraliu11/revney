@@ -100,35 +100,29 @@
 
 
                         <script>
-                            function postSubmitAction() {
-                                // window.location='thank_you.html';
-                                $("#interest-form").remove();
-                                $("#thank-you").show();
-                            }
-                        </script>
-                        <script type="text/javascript">var submitted=false;</script>
+                      function postSubmitAction() {
+                          // window.location='thank_you.html';
+                          $("#interest-form").remove();
+                          $("#thank-you").show();
+                      }
+                    </script>
+                    <script type="text/javascript">var submitted=false;</script>
+                    	 <script type="text/javascript">var submitted=false;</script>
+				     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='THE REDIRECT LINK HERE';}"></iframe>
 
-                        <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>
-                        <form id="interest-form" action="https://docs.google.com/forms/d/e/1FAIpQLScla1QImRXcqpDmT23KXyeEM-KoHoxn-CeJnvy1W6z0ShzzcQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" name="interest form">
-                            <h2 class="section-heading" >Pre-Register for Dinezen!</h2>
-                            <p>Once our app is up and running, you'll be first to find out.</p>
+                      <form class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc-8dCVJvGrqittSvD169haLx-FjDe-yvkczAnk473-GvSx1A/formResponse">
 
-                            <div class="input block" id="email-desktop-input">
-                                <input type="text" name="entry.2072316545" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
-                                <input type="submit" class="button email-button" id="desktop-email-submit" value="SIGN ME UP">
-                            </div>
+				          <input name="entry.1811167218" type="email" required />
 
-                            <div class="input block" id="email-mobile-input" hidden>
-                                <input type="text" name="entry.1773326781" class="button" id="email-mobile" name="email" placeholder="NAME@EXAMPLE.COM">
-                                <input type="submit" class="button email-button" id="mobile-email-submit" value="SIGN ME UP">
-                            </div>
 
-                        </form>
+				          <input type="submit" value="Send" />
 
-                        <div id="thank-you" hidden>
-                            <h2 class="section-heading">Thank You for Signing Up!</h2>
-                            <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at <a href="mailto:DinezenApp@gmail.com">DinezenApp@gmail.com</a> or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
-                        </div>
+				    </form>
+
+                    <div id="thank-you" hidden>
+                      <h2 class="section-heading">Thank You for Signing Up!</h2>
+                      <p>We would love to hear any thoughts you have on our mobile app solution, nutrition, your university's dining halls, or anything else! Shoot us an email at <a href="mailto:DinezenApp@gmail.com">DinezenApp@gmail.com</a> or contact us through <a href="http://facebook.com/DinezenApp" style="text-decoration:none;">Facebook</a>!</p>
+                    </div>
 
                     </div>
                 </div>
