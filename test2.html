@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="main-form">
+
+    <script>
+        function postSubmitAction() {
+            // window.location='thank_you.html';
+            $("#interest-form").remove();
+            // $("#thank-you").show();
+            var x = document.getElementById("thank-you");
+            x.style.display = "block";
+            var button = document.getElementById('email-form')
+            button.style.display = "none"
+        }
+    </script>
+    <!--		<script type="text/javascript">var submitted=false;</script>-->
+    <!--    	<iframe id="hidden_iframe" name="hidden_iframe" onload="submitted&amp;&amp;(window.location=&quot;https://blog.webjeda.com/demo/google-form-customize/&quot;)" style="display:none"></iframe>-->
+    <!--        <iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="if(submitted)	{postSubmitAction();}"></iframe>-->
+    <div class="interest-form">
+        <form class="row align-items-center justify-content-center no-gutters mt-70" method="POST"
+              target="hidden_iframe" onsubmit="postSubmitAction(); return true;"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdvssUd7zJsbNJI2BV3DwOggD1bx59WNgQ66mqqLAPVuvLvHQ/formResponse"
+              target="hidden_iframe" id="email-form">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-flex flex-wrap justify-content-center justify-content-md-between holder"
+                 id="mG61Hd">
+                <!--<input type="email" name="entry.1865802311" id="email" placeholder="Your email"-->
+                       <!--class="mw-320 input lg border-action-1 focus-action-2 color-twitter placeholder-action-2 f-20"-->
+                       <!--required/>-->
+                <input type="text" name="entry.1222735248" placeholder="address" id="address"><br>
+                <input type="text" name="entry.607822578" placeholder="category" id="category"><br>
+                <input type="text" name="entry.70168340" placeholder="city" id="city"><br>
+                <input type="text" name="entry.1063272019" placeholder="country" id="country"><br>
+                <input type="text" name="entry.401820194" placeholder="description" id="description"><br>
+                <!--<input type="text" name="" placeholder="likedNumber" id="likedNumber"><br>-->
+                <input type="text" name="entry.1148711347" placeholder="name" id="name"><br>
+                <input type="text" name="entry.720746138" placeholder="neighborhood" id="neighborhood"><br>
+                <input type="text" name="entry.2091696150" placeholder="state" id="state"><br>
+                <input type="file" name="entry.1262209931" id="photo0"><br>
+                <input type="file" name="entry.521928053" id="photo1"><br>
+                <input type="file" name="entry.8512182" id="photo2"><br>
+                <input type="submit" id="email-submit" class="btn action-1 lg" value="Notify me!">
+            </div>
+        </form>
+    </div>
+    <div class="container" id="thank-you" style="display:none">
+        <!-- <div class="mb-3 logo color-white d-block d-xl-none text-center logo_mobile">Revney</div> --><br/>
+        <h4 class="big color-facebook text-center" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">
+            Thank You for Signing Up!</h4>
+        <div class="mw-620 mx-auto mt-35 f-22 color-facebook op-7 text-center text-adaptive">
+			<span data-aos-duration="700" data-aos="fade-down" data-aos-delay="350">
+			We will let you know when our app is ready for testing!
+			</span>
+        </div>
+
+        <div class="color-white op-3 text-center mt-35">
+            <!--
+            <span data-aos-duration="700" data-aos="fade-down" data-aos-delay="1050">
+            By signing up, you agree to the
+            <a href="#" class="link color-white">Terms of Service</a>			</span>
+            -->
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+        <br><br><br><br><hr color="lightblue" class="color-main">
+        <a href="https://www.instagram.com/revneytravel/" target="_blank" class="link color-main f-26 mx-10"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/revneytravel" target="_blank" class="link color-main f-26 mx-10"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <!--<input type="text" placeholder="address" id="address"><br>-->
+    <!--<input type="text" placeholder="category" id="category"><br>-->
+    <!--<input type="text" placeholder="city" id="city"><br>-->
+    <!--<input type="text" placeholder="country" id="country"><br>-->
+    <!--<input type="text" placeholder="description" id="description"><br>-->
+    <!--<input type="text" placeholder="likedNumber" id="likedNumber"><br>-->
+    <!--<input type="text" placeholder="name" id="name"><br>-->
+    <!--<input type="text" placeholder="neighborhood" id="neighborhood"><br>-->
+    <!--<input type="text" placeholder="state" id="state"><br>-->
+    <!--<input type="text" placeholder="photo0" id="photo0"><br>-->
+    <!--<input type="text" placeholder="photo1" id="photo1"><br>-->
+    <!--<input type="text" placeholder="photo2" id="photo2"><br>-->
+    <!--&lt;!&ndash;<input type="file" id="photo0"><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="file" id="photo1"><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="file" id="photo2"><br>&ndash;&gt;-->
+
+    <!--<button id="submit_btn" onclick="storeData()">Submit</button>-->
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDUDLRufwYTIW6niU8PWg6j8gVzwbtkmag",
+        authDomain: "revney-2c498.firebaseapp.com",
+        databaseURL: "https://revney-2c498.firebaseio.com",
+        projectId: "revney-2c498",
+        storageBucket: "revney-2c498.appspot.com",
+        messagingSenderId: "1061595863639",
+        appId: "1:1061595863639:web:534cadc5754d735b08a112",
+        measurementId: "G-TFHSCED6YC"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+</script>
+<script src="uploadActivity.js"></script>
+</body>
+</html>

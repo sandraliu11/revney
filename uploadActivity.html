@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="main-form">
+
+    <input type="text" placeholder="address" id="address"><br>
+    <input type="text" placeholder="category" id="category"><br>
+    <input type="text" placeholder="city" id="city"><br>
+    <input type="text" placeholder="country" id="country"><br>
+    <input type="text" placeholder="description" id="description"><br>
+    <input type="text" placeholder="likedNumber" id="likedNumber"><br>
+    <input type="text" placeholder="name" id="name"><br>
+    <input type="text" placeholder="neighborhood" id="neighborhood"><br>
+    <input type="text" placeholder="state" id="state"><br>
+    <!--<input type="text" placeholder="photo0" id="photo0"><br>-->
+    <!--<input type="text" placeholder="photo1" id="photo1"><br>-->
+    <!--<input type="text" placeholder="photo2" id="photo2"><br>-->
+    <input type="file" name="photo0" id="photo0"><br>
+    <input type="file" name="photo1" id="photo1"><br>
+    <input type="file" name="photo2" id="photo2"><br>
+    <!--<img id="blah" src="#" alt="your image" />-->
+
+    <button id="submit_btn" onclick="storeData()">Submit</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDUDLRufwYTIW6niU8PWg6j8gVzwbtkmag",
+        authDomain: "revney-2c498.firebaseapp.com",
+        databaseURL: "https://revney-2c498.firebaseio.com",
+        projectId: "revney-2c498",
+        storageBucket: "revney-2c498.appspot.com",
+        messagingSenderId: "1061595863639",
+        appId: "1:1061595863639:web:534cadc5754d735b08a112",
+        measurementId: "G-TFHSCED6YC"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+</script>
+<script src="uploadActivity.js"></script>
+</body>
+</html>
