@@ -2,31 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/uploadActivityForm.css">
     <title>Title</title>
 </head>
 <body>
 
 <div class="main-form">
+    <div class="main-w3layouts wrapper">
+        <div class="main-agileinfo">
 
-    <input type="text" placeholder="address" id="address" required><br>
-    <input type="text" placeholder="category" id="category" required><br>
-    <input type="text" placeholder="city" id="city" required><br>
-    <input type="text" placeholder="country" id="country" required><br>
-    <input type="text" placeholder="description" id="description" required><br>
-    <input type="text" placeholder="likedNumber" id="likedNumber" required><br>
-    <input type="text" placeholder="name" id="name" required><br>
-    <input type="text" placeholder="neighborhood" id="neighborhood" required><br>
-    <input type="text" placeholder="state" id="state" required><br>
-    <!--<input type="text" placeholder="photo0" id="photo0"><br>-->
-    <!--<input type="text" placeholder="photo1" id="photo1"><br>-->
-    <!--<input type="text" placeholder="photo2" id="photo2"><br>-->
-    <input type="file" name="photo0" id="photo0" required><br>
-    <input type="file" name="photo1" id="photo1" required><br>
-    <input type="file" name="photo2" id="photo2" required><br>
-    <!--<img id="blah" src="#" alt="your image" />-->
+            <div>
+                
+            </div>
 
-    <button id="submit_btn" onclick="storeData()">Submit</button>
-
+            <div class="agileits-top">
+                <input type="text" placeholder="address" id="address" required><br>
+                <input type="text" placeholder="category" id="category" required><br>
+                <input type="text" placeholder="city" id="city" required><br>
+                <input type="text" placeholder="country" id="country" required><br>
+                <input type="text" placeholder="description" id="description" required><br>
+                <input type="text" placeholder="likedNumber" id="likedNumber" required><br>
+                <input type="text" placeholder="name" id="name" required><br>
+                <input type="text" placeholder="neighborhood" id="neighborhood" required><br>
+                <input type="text" placeholder="state" id="state" required><br>
+                <!--<input type="text" placeholder="photo0" id="photo0"><br>-->
+                <!--<input type="text" placeholder="photo1" id="photo1"><br>-->
+                <!--<input type="text" placeholder="photo2" id="photo2"><br>-->
+                
+                
+                <input type="file" name="photo0" id="photo0" required><br>
+                <input type="file" name="photo1" id="photo1" required><br>
+                <input type="file" name="photo2" id="photo2" required><br>
+                <!--<img id="blah" src="#" alt="your image" />-->
+                <div class="wthree-text">
+                    <div class="clear"> </div>
+                </div>
+                <button id="submit_btn" onclick="storeData()">Submit</button>
+            </div>
+         </div>
+    </div>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
