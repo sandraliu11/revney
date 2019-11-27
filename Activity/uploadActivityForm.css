@@ -9,7 +9,13 @@
 }
 
 body, html {
-	height: 100%;
+    /*
+    height: 100%;
+    */
+    background: -webkit-linear-gradient(to top, #5baaef, #FFFf);
+    background: -moz-linear-gradient(to top, #5baaef, #FFF);
+    background: -o-linear-gradient(to top, #5baaef, #FFF);
+    background: linear-gradient(to top, #5baaef, #FFF);
 }
 
 /*---------------------------------------------*/
@@ -77,15 +83,15 @@ textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #555555;}
-input:-moz-placeholder { color: #555555;}
-input::-moz-placeholder { color: #555555;}
-input:-ms-input-placeholder { color: #555555;}
+input::-webkit-input-placeholder { color: rgba(0,0,0,.2);}
+input:-moz-placeholder { color: rgba(0,0,0,.2);}
+input::-moz-placeholder { color: rgba(0,0,0,.2);}
+input:-ms-input-placeholder { color: rgba(0,0,0,.2);}
 
-textarea::-webkit-input-placeholder { color: #555555;}
-textarea:-moz-placeholder { color: #555555;}
-textarea::-moz-placeholder { color: #555555;}
-textarea:-ms-input-placeholder { color: #555555;}
+textarea::-webkit-input-placeholder { color: rgba(0,0,0,.2);}
+textarea:-moz-placeholder { color: rgba(0,0,0,.2);}
+textarea::-moz-placeholder { color: rgba(0,0,0,.2);}
+textarea:-ms-input-placeholder { color: rgba(0,0,0,.2);}
 
 label {
   display: block;
@@ -106,23 +112,6 @@ button:hover {
 iframe {
 	border: none !important;
 }
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
-.txt1 {
-  font-size: 16px;
-  color: #555555;
-  line-height: 1.5;
-}
-
-.txt2 {
-  font-size: 14px;
-  color: #999999;
-  line-height: 1.5;
-}
-
-.bo1 {border-bottom: 1px solid #999999;}
 
 /*//////////////////////////////////////////////////////////////////
 [ activity ]*/
@@ -148,7 +137,8 @@ iframe {
 
 .wrap-activity100 {
   width: 680px;
-  background: rgba(20,20,20,.9);
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(0,0,0,.1);
   border-radius: 5px;
   position: relative;
 }
@@ -165,7 +155,7 @@ iframe {
   width: 100%;
   display: block;
   font-size: 39px;
-  color: #555555;
+  color: rgba(12,12,12,.7);
   line-height: 1.2;
   text-align: center;
 }
@@ -176,15 +166,15 @@ iframe {
 .wrap-input100 {
   width: 100%;
   position: relative;
-  background-color: rgba(12,12,12,.7);
-  border: 1px solid hsla(0,0%,100%,.25);
+  background-color: #e6e6e6;
+  border: 1px solid rgba(0,0,0,.1);
   border-radius: 5px;
 }
 
 
 /*---------------------------------------------*/
 .input100 {
-  color: hsla(0,0%,100%,.5);
+  color: rgba(12,12,12,.7);
   line-height: 1.2;
   font-size: 18px;
 
@@ -269,11 +259,12 @@ iframe {
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  background-color: #FFF;
+  background-color: rgba(12,12,12,.9);
+  border: #000;
   border-radius: 5px;
 
   font-size: 16px;
-  color: #000;
+  color: #FFF;
   line-height: 1.2;
 
   -webkit-transition: all 0.4s;
@@ -319,15 +310,11 @@ iframe {
     padding-left: 60px;
     padding-right: 60px;
   }
+}
 
 @media (max-width: 576px) {
   .wrap-activity100 {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .btn-face,
-  .btn-google {
-    width: 100%;
   }
 }
