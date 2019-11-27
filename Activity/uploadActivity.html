@@ -1,71 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./uploadActivityForm.css">
-    <title>Title</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/Activity/uploadActivityFormUtil.css">
+        <link rel="stylesheet" type="text/css" href="/Activity/uploadActivityForm.css">
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="container-activity100">
+            <div class="wrap-activity100 p-l-110 p-r-110 p-t-62 p-b-33">
+                <span class="activity100-form-title p-b-53">
+                    Activity
+                </span>
 
-<div class="main-form">
-    <div class="main-w3layouts wrapper">
-        <div class="main-agileinfo">
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="address" id="address" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="category" id="category" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="city" id="city" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="country" id="country" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="description" id="description" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="likedNumber" id="likedNumber" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="name" id="name" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="neighborhood" id="neighborhood" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="state" id="state" required>
+                    <span class="focus-input100"></span>
+                </div>
+                <br>
 
-            <div>
+                <!--<input class="input100" type="text" placeholder="photo0" id="photo0">-->
+                <!--<input class="input100" type="text" placeholder="photo1" id="photo1">-->
+                <!--<input class="input100" type="text" placeholder="photo2" id="photo2">-->
                 
-            </div>
-
-            <div class="agileits-top">
-                <input type="text" placeholder="address" id="address" required><br>
-                <input type="text" placeholder="category" id="category" required><br>
-                <input type="text" placeholder="city" id="city" required><br>
-                <input type="text" placeholder="country" id="country" required><br>
-                <input type="text" placeholder="description" id="description" required><br>
-                <input type="text" placeholder="likedNumber" id="likedNumber" required><br>
-                <input type="text" placeholder="name" id="name" required><br>
-                <input type="text" placeholder="neighborhood" id="neighborhood" required><br>
-                <input type="text" placeholder="state" id="state" required><br>
-                <!--<input type="text" placeholder="photo0" id="photo0"><br>-->
-                <!--<input type="text" placeholder="photo1" id="photo1"><br>-->
-                <!--<input type="text" placeholder="photo2" id="photo2"><br>-->
+                <input class="input100" type="file" name="photo0" id="photo0" required>
+                <input class="input100" type="file" name="photo1" id="photo1" required>
+                <input class="input100" type="file" name="photo2" id="photo2" required>
                 
-                
-                <input type="file" name="photo0" id="photo0" required><br>
-                <input type="file" name="photo1" id="photo1" required><br>
-                <input type="file" name="photo2" id="photo2" required><br>
                 <!--<img id="blah" src="#" alt="your image" />-->
                 <div class="wthree-text">
                     <div class="clear"> </div>
                 </div>
-                <button id="submit_btn" onclick="storeData()">Submit</button>
+                
+
+                <div class="container-activity100-form-btn m-t-17">
+                    <button class="activity100-form-btn" id="submit_btn" onclick="storeData()">Submit</button>
+                </div>
             </div>
-         </div>
-    </div>
-</div>
+        </div>
 
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
 
-<script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyDUDLRufwYTIW6niU8PWg6j8gVzwbtkmag",
-        authDomain: "revney-2c498.firebaseapp.com",
-        databaseURL: "https://revney-2c498.firebaseio.com",
-        projectId: "revney-2c498",
-        storageBucket: "revney-2c498.appspot.com",
-        messagingSenderId: "1061595863639",
-        appId: "1:1061595863639:web:534cadc5754d735b08a112",
-        measurementId: "G-TFHSCED6YC"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    // firebase.analytics();
-</script>
-<script src="uploadActivity.js"></script>
-</body>
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDUDLRufwYTIW6niU8PWg6j8gVzwbtkmag",
+            authDomain: "revney-2c498.firebaseapp.com",
+            databaseURL: "https://revney-2c498.firebaseio.com",
+            projectId: "revney-2c498",
+            storageBucket: "revney-2c498.appspot.com",
+            messagingSenderId: "1061595863639",
+            appId: "1:1061595863639:web:534cadc5754d735b08a112",
+            measurementId: "G-TFHSCED6YC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+        </script>
+        <script src="uploadActivity.js"></script>
+    </body>
 </html>
